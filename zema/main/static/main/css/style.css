@@ -1,0 +1,64 @@
+html, body {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
+    background-image: url('../images/futuristic-city-background.jpg');
+    background-repeat: no-repeat; /* Не повторять изображение */
+    background-position: center; /* Центрировать изображение */
+    background-size: cover; /* Изображение покрывает весь экран, сохраняя пропорции */
+    background-attachment: fixed; /* Фон статичен и не двигается при прокрутке */
+    font-family: 'Gill Sans', sans-serif;
+    margin: 0; /* Убрать отступы по умолчанию */
+    /*padding-top: 60px;*/
+    /*height: 100%;*/
+}
+
+.container {
+    /*margin-top: 20px;*/
+    /*display: grid;*/
+    /*grid-template-rows: auto 1fr auto; !* Заголовок, контент, футер *!*/
+    /*min-height: 60vh; !* Минимальная высота контейнера = высоте экрана *!*/
+    color: white;
+    /*padding: 20px;*/
+    text-shadow: black 0.1em 0.1em 0.6em;
+}
+
+footer {
+    margin-top: auto;
+    /* Прижимаем footer к низу
+       /*filter: brightness(0.5);*/
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный слой */
+}
+
+footer a {
+    color: #0d6efd ; /* Цвет ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+footer a:hover {
+    color: #ffffff; /* Цвет ссылок при наведении */
+}
+
+/* Стили для header */
+header {
+    position: fixed; /* Фиксируем header */
+    top: 0; /* Прижимаем к верху */
+    /*left: 0; !* Прижимаем к левому краю *!*/
+    /*width: 100%; !* Ширина на всю страницу *!*/
+    /*background-color: #333; !* Цвет фона *!*/
+    /*color: white; !* Цвет текста *!*/
+    /*text-align: center; !* Выравнивание текста *!*/
+    /*padding: 10px 0; !* Отступы внутри header *!*/
+    /*z-index: 1000; !* Убедитесь, что header выше других элементов *!*/
+}
+
+h1 {
+    text-align: center;
+    text-shadow: red 0.1em 0.1em 0.6em;
+}
+
+h1:hover  {
+    color: red;
+    text-shadow: white 0.2em 0.2em 0.5em;
+    transform: scale(1.1);
+    transition: 1s;
+}

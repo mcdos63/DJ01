@@ -1,0 +1,23 @@
+{% load static %}
+
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <a href="{% url 'home' %}" class="btn btn-outline-light rounded-pill col-12">Основная</a>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <a href="{% url 'test' %}" class="btn btn-outline-light rounded-pill col-12">Тестовая</a>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <a onmouseout="document.rollover.src='{% static 'main/images/mouse1.png' %}'"
+               onmouseover="document.rollover.src='{% static 'main/images/mouse2.png' %}'">
+               <img src='{% static 'main/images/mouse1.png' %}' name="rollover" alt="грустная мышь" width="100"></a>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <a href="{% url 'data' %}" class="btn btn-outline-light rounded-pill col-12">Данные</a>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <a href="{% url 'article' %}" class="btn btn-outline-light rounded-pill col-12">Это интересно</a>
+        </div>
+    </div>
+</div>
